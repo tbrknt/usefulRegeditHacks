@@ -1,0 +1,12 @@
+Windows Registry Editor Version 5.00
+
+; inspired from How-To-Geek article:
+; http://www.howtogeek.com/165268/how-to-add-open-powershell-here-to-the-context-menu-in-windows/
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\powershellmenu]
+@="Open powershell here"
+"Extended"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\powershellmenu\command]
+@="C:\\\\Windows\\\\system32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -NoExit -Command Set-Location -LiteralPath '%L'"
+
