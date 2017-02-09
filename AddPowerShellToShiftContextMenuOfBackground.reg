@@ -2,6 +2,7 @@ Windows Registry Editor Version 5.00
 
 ; inspired from How-To-Geek article:
 ; http://www.howtogeek.com/165268/how-to-add-open-powershell-here-to-the-context-menu-in-windows/
+; created by tbrknt
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\powershellmenu]
 @="Open powershell here"
